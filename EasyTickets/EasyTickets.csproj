@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EasyEncryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EasyEncryption.1.0.2\lib\EasyEncryption.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=7.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.7.0.1\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
@@ -72,14 +75,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Banco\EventosDispo.cs" />
     <Compile Include="Classes\Banco\ConexaoBD.cs" />
     <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Classes\Eventos.cs" />
-    <Compile Include="Views\abertura.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SHA.cs" />
+    <Compile Include="Views\Abertura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\abertura.Designer.cs">
-      <DependentUpon>abertura.cs</DependentUpon>
+    <Compile Include="Views\Abertura.Designer.cs">
+      <DependentUpon>Abertura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastrarPessoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CadastrarPessoa.Designer.cs">
+      <DependentUpon>CadastrarPessoa.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\ControleDeVendas.cs">
       <SubType>Form</SubType>
@@ -87,11 +103,17 @@
     <Compile Include="Views\ControleDeVendas.Designer.cs">
       <DependentUpon>ControleDeVendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Form1.cs">
+    <Compile Include="Views\EventosComprados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Views\EventosComprados.Designer.cs">
+      <DependentUpon>EventosComprados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,25 +123,26 @@
     <Compile Include="Views\TelaFundo.Designer.cs">
       <DependentUpon>TelaFundo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\abertura.resx">
-      <DependentUpon>abertura.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Abertura.resx">
+      <DependentUpon>Abertura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CadastrarPessoa.resx">
+      <DependentUpon>CadastrarPessoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ControleDeVendas.resx">
       <DependentUpon>ControleDeVendas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Views\EventosComprados.resx">
+      <DependentUpon>EventosComprados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Views\TelaFundo.resx">
       <DependentUpon>TelaFundo.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,50 +161,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\f6efcf92facc29c3b3c6fc7bb4f69638.jpg" />
+    <Folder Include="Resources\" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\desktop-wallpaper-red-black-background-in-resolution-1280x768-black.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\istockphoto-1286371622-612x612.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\the-batman-logo-with-reflection-black-and-red-wallpaper-2560x1080_14.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wallpaperflare.com_wallpaper.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\a67f3258bff00b40e66787f24beb3992.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\17708618-personagem-de-bilhete-de-filme-de-desenho-animado-retro-ilustracao-vintage-isolada-no-fundo-branco-vetor.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\17708618-personagem-de-bilhete-de-filme-de-desenho-animado-retro-ilustracao-vintage-isolada-no-fundo-branco-vetor-removebg-preview.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image-removebg-preview %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\55a200212424694787f9abbcc15a4cb77a55f89fr1-1280-720v2_hq.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\img5e9b8e7e0d46d3.02728260.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\img5e9b8e7e0d46d3.027282601.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\img5e9b8e7e0d46d3.027282602.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\img5e9b8e7e0d46d3.027282603.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coded.jpg" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,6 @@
 ﻿namespace EasyTickets.Views
 {
-    partial class abertura
+    partial class Abertura
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Abertura));
             this.lblSaudacao = new System.Windows.Forms.Label();
             this.btnCentral = new System.Windows.Forms.Button();
-            this.btnLateral = new System.Windows.Forms.Button();
-            this.btnVip = new System.Windows.Forms.Button();
-            this.btnComprar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblCentral = new System.Windows.Forms.Label();
-            this.lblLateral = new System.Windows.Forms.Label();
-            this.lblVip = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.DGVEventosViews = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVEventosViews)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSaudacao
@@ -54,94 +53,28 @@
             // 
             // btnCentral
             // 
-            this.btnCentral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCentral.BackColor = System.Drawing.Color.Black;
             this.btnCentral.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCentral.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCentral.Location = new System.Drawing.Point(12, 159);
+            this.btnCentral.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnCentral.Location = new System.Drawing.Point(671, 415);
             this.btnCentral.Name = "btnCentral";
-            this.btnCentral.Size = new System.Drawing.Size(102, 46);
+            this.btnCentral.Size = new System.Drawing.Size(117, 23);
             this.btnCentral.TabIndex = 1;
             this.btnCentral.Text = "Compra de ingresso";
             this.btnCentral.UseVisualStyleBackColor = false;
             this.btnCentral.Click += new System.EventHandler(this.btnCentral_Click);
             // 
-            // btnLateral
-            // 
-            this.btnLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnLateral.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLateral.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLateral.Location = new System.Drawing.Point(12, 224);
-            this.btnLateral.Name = "btnLateral";
-            this.btnLateral.Size = new System.Drawing.Size(100, 55);
-            this.btnLateral.TabIndex = 2;
-            this.btnLateral.Text = "Eventos";
-            this.btnLateral.UseVisualStyleBackColor = false;
-            this.btnLateral.Click += new System.EventHandler(this.btnLateral_Click);
-            // 
-            // btnVip
-            // 
-            this.btnVip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnVip.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnVip.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnVip.Location = new System.Drawing.Point(13, 298);
-            this.btnVip.Name = "btnVip";
-            this.btnVip.Size = new System.Drawing.Size(101, 48);
-            this.btnVip.TabIndex = 3;
-            this.btnVip.Text = "Visualizar Compras";
-            this.btnVip.UseVisualStyleBackColor = false;
-            this.btnVip.Click += new System.EventHandler(this.btnVip_Click);
-            // 
-            // btnComprar
-            // 
-            this.btnComprar.BackColor = System.Drawing.Color.Black;
-            this.btnComprar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnComprar.ForeColor = System.Drawing.Color.Lime;
-            this.btnComprar.Location = new System.Drawing.Point(616, 415);
-            this.btnComprar.Name = "btnComprar";
-            this.btnComprar.Size = new System.Drawing.Size(154, 23);
-            this.btnComprar.TabIndex = 4;
-            this.btnComprar.Text = "Comprar";
-            this.btnComprar.UseVisualStyleBackColor = false;
-            this.btnComprar.Click += new System.EventHandler(this.btnComprar_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(21, 94);
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(284, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(271, 20);
+            this.label1.Size = new System.Drawing.Size(225, 28);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Escolha uma das opções abaixo:";
-            // 
-            // lblCentral
-            // 
-            this.lblCentral.AutoSize = true;
-            this.lblCentral.Location = new System.Drawing.Point(138, 176);
-            this.lblCentral.Name = "lblCentral";
-            this.lblCentral.Size = new System.Drawing.Size(40, 13);
-            this.lblCentral.TabIndex = 6;
-            this.lblCentral.Text = "220,00";
-            // 
-            // lblLateral
-            // 
-            this.lblLateral.AutoSize = true;
-            this.lblLateral.Location = new System.Drawing.Point(138, 245);
-            this.lblLateral.Name = "lblLateral";
-            this.lblLateral.Size = new System.Drawing.Size(40, 13);
-            this.lblLateral.TabIndex = 7;
-            this.lblLateral.Text = "110,00";
-            // 
-            // lblVip
-            // 
-            this.lblVip.AutoSize = true;
-            this.lblVip.Location = new System.Drawing.Point(138, 316);
-            this.lblVip.Name = "lblVip";
-            this.lblVip.Size = new System.Drawing.Size(40, 13);
-            this.lblVip.TabIndex = 8;
-            this.lblVip.Text = "500,00";
+            this.label1.Text = "Eventos disponíveis:";
             // 
             // btnVoltar
             // 
@@ -156,27 +89,56 @@
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // abertura
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(732, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(67, 54);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // DGVEventosViews
+            // 
+            this.DGVEventosViews.AllowUserToAddRows = false;
+            this.DGVEventosViews.AllowUserToDeleteRows = false;
+            this.DGVEventosViews.AllowUserToResizeColumns = false;
+            this.DGVEventosViews.AllowUserToResizeRows = false;
+            this.DGVEventosViews.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVEventosViews.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DGVEventosViews.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.DGVEventosViews.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVEventosViews.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.DGVEventosViews.Location = new System.Drawing.Point(171, 114);
+            this.DGVEventosViews.Name = "DGVEventosViews";
+            this.DGVEventosViews.Size = new System.Drawing.Size(463, 274);
+            this.DGVEventosViews.TabIndex = 11;
+            this.DGVEventosViews.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVEventosViews_CellContentClick);
+            // 
+            // Abertura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EasyTickets.Properties.Resources.coded;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.DGVEventosViews);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.lblVip);
-            this.Controls.Add(this.lblLateral);
-            this.Controls.Add(this.lblCentral);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnComprar);
-            this.Controls.Add(this.btnVip);
-            this.Controls.Add(this.btnLateral);
             this.Controls.Add(this.btnCentral);
             this.Controls.Add(this.lblSaudacao);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "abertura";
+            this.Name = "Abertura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Abertura";
+            this.Activated += new System.EventHandler(this.Abertura_Activated);
+            this.Load += new System.EventHandler(this.Abertura_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVEventosViews)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,13 +148,9 @@
 
         private System.Windows.Forms.Label lblSaudacao;
         private System.Windows.Forms.Button btnCentral;
-        private System.Windows.Forms.Button btnLateral;
-        private System.Windows.Forms.Button btnVip;
-        private System.Windows.Forms.Button btnComprar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblCentral;
-        private System.Windows.Forms.Label lblLateral;
-        private System.Windows.Forms.Label lblVip;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView DGVEventosViews;
     }
 }

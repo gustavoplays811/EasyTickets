@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using MySqlConnector;
 
-namespace EasyTickets.Banco
+namespace EasyTickets.Classes.Banco
 {
-    internal class ConexaoBD
+    public class ConexaoBD
     {
         // Nas linhas abaixo você poderá mudar as informações da conexão com o bd:
         private const string SERVER = "localhost",

@@ -19,7 +19,7 @@ namespace EasyTickets.Views
 
         private void TelaFundo_Activated(object sender, EventArgs e)
         {
-            Form1 janela = new Form1();
+            Abertura janela = new Abertura();
             janela.ShowDialog();
             Application.Exit();
            
